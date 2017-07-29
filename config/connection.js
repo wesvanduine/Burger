@@ -8,7 +8,7 @@ var connection = mysql.createConnection({
 
 connection.connect(function(err) {
 	if(err) throw err;
-	console.log("Connected as id:" + connection.threadid);
+	console.log("Connected as id: "+connection.threadid);
 })
 
 module.exports = connection;
